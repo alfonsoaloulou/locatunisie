@@ -1,5 +1,5 @@
 import DetailsLogementCard from '@/components/DetailsLogementCard';
-import { logements } from '@/data/logements';
+import logements from '@/data/logements';
 import React from 'react';
 
 export default function LogementDetailPage({ params }) {

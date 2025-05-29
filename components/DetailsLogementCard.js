@@ -15,10 +15,9 @@ export default function DetailsLogementCard({ logement }) {
       <p className="text-[--txtcolor]">Catégorie : {logement.categorie}</p>
       <p className="text-[--txtcolor]">Prix : <span className="text-[--secondary] font-bold">{logement.prix} TND</span></p>
       <p className="text-[--txtcolor]">Description : {logement.description}</p>
-      <p className="text-[--txtcolor]">Localisation : {logement.localisation}</p>
       <button
         onClick={handleReservation}
-        className="mt-4 bg-[--primary] text-white px-6 py-2 rounded hover:opacity-90"
+        className="bg-primary text-white px-4 py-2 rounded hover:bg-opacity-90"
       >
         Réserver
       </button>
