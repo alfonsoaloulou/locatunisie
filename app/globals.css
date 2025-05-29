@@ -1,8 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Montserrat&family=Roboto&display=swap');
 @import "tailwindcss";
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary: #F59E0B; /* palette personnalisée */
+  --secondary: #10B981;
+  --backg: #f5f5f5;
+  --txtcolor: #333333;
+
+  --font-title: 'Itim', cursive;
+  --font-menu: 'Montserrat', sans-serif;
+  --font-body: 'Roboto', sans-serif;
 }
 
 @theme inline {
@@ -20,7 +29,17 @@
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--background);
+  color: var(--txtcolor);
+  font-family: var(--font-body);
+}
+
+@layer utilities {
+  .font-itim { font-family: 'Itim', cursive; }
+  .font-montserrat { font-family: 'Montserrat', sans-serif; }
+  .font-roboto { font-family: 'Roboto', sans-serif; }
+  .bg-primary { background-color: #F59E0B; }
+  .text-primary { color: #F59E0B; }
+  .bg-secondary { background-color: #10B981; }
+  .text-secondary { color: #10B981; }
 }
